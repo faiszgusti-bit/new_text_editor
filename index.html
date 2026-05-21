@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teks Editor | Web</title>
+    <link rel="stylesheet" href="../style/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Average+Sans&display=swap" rel="stylesheet">
+    
+    <!-- FONT AWESOME ICON -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+    <h1>Text Editor Web</h1>
+    <div class="container">
+
+        <div class="toolbar">
+
+    <!-- Undo -->
+    <button id="undoBtn" title="Undo (CTRL + Z)">
+        <i class="fa-solid fa-rotate-left"></i>
+    </button>
+
+    <!-- Redo -->
+    <button id="redoBtn" title="Redo (CTRL + Y)">
+        <i class="fa-solid fa-rotate-right"></i>
+    </button>
+
+    <!-- Garis -->
+    <div class="separator"></div>
+
+    <!-- New File -->
+    <button id="newBtn" title="New File (CTRL + N)">
+        <i class="fa-regular fa-file"></i>
+    </button>
+
+    <!-- Save -->
+    <button id="saveBtn" title="Save File (CTRL + S)">
+        <i class="fa-regular fa-floppy-disk"></i>
+    </button>
+
+    <!-- Garis -->
+    <div class="separator"></div>
+
+    <!-- Hapus -->
+    <button id="clearBtn" title="Hapus Teks">
+        <i class="fa-regular fa-trash-can"></i>
+    </button>
+
+</div>
+
+     <!-- Area mengetik teks -->
+        <textarea id="editor" placeholder="Ketik teks disini..."></textarea>
+
+        <!-- Histori aktivitas -->
+         
+        <div class="history-container">
+            <h2>History Aktivitas</h2>
+            <!-- <h2>History Aktivitas</h2> -->
+            <ul id="historyList"></ul>
+        </div>
+
+    <script src="../logic/script.js"></script>
+</body>
+</html>
